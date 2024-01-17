@@ -1,5 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,500;0,700;0,800;1,800&display=swap");
+
+:root {
+  --bs-body-font-family: "Rubik";
+}
 .App {
   text-align: center;
+  overflow-x: hidden;
 }
 
 .App-logo {
@@ -13,8 +19,12 @@
   }
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 .App-header {
-  background-color: #282c34;
+  background-color: #194aab;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,6 +32,8 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 .App-link {
@@ -36,3 +48,177 @@
     transform: rotate(360deg);
   }
 }
+
+.bootstrap-navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar-brand {
+  padding-left: 0.75vw;
+  font-family: "Rubik", sans-serif;
+}
+
+.navbar .nav-link {
+  font-family: "Rubik", sans-serif;
+}
+
+#welcome-page {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: calc((100vh / 7));
+  background-color: #282c34;
+  overflow-x: hidden;
+  z-index: 100;
+}
+
+#welcome-page-name-box {
+  font-family: "Rubik", sans-serif;
+  font-size: 5rem;
+  font-weight: 500;
+  color: #f7f8fa;
+  animation: fadeIn ease 3s, slideIn ease 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+#title-break {
+  width: 10%;
+  height: 3px;
+  background-color: white;
+  border: none;
+  opacity: 0; 
+  margin-top: 0;
+
+  animation-name: extend, fadeIn;
+  animation-duration: 1s, 0.5s;
+  animation-timing-function: ease-in, ease-in;
+  animation-fill-mode: forwards, forwards;
+  animation-delay: 1.5s, 1.5s;
+}
+
+#social-links-list {
+  list-style-type: none;
+  margin: 0;
+  padding-top: 1.5vh;
+  padding-left: 0;
+}
+
+.social-link-item {
+  margin: 0;
+  padding: 0;
+}
+
+#social-links{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  opacity: 0;
+
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+  animation-delay: 1.5s;
+} 
+
+.fa {
+  font-size: calc(1.25vh + 1.25vw);
+  color: white;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+.arrow-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 3vh;
+  position: absolute;
+  opacity: 0;
+
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+  animation-delay: 1.5s;
+}
+
+.fa-solid {
+  font-size: 50px;
+  animation: fadeMoveDown 2s infinite;
+  color: white;
+}
+
+@keyframes fadeMoveDown {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+      margin-top: -30%;
+  }
+  to {
+      margin-right: 0%;
+  }
+}
+
+@keyframes extend {
+  0% {
+    width: 0.5rem;
+  }
+  100% {
+    width: 40%;
+  }
+}
+
+/* .buffer-bar{
+  height: 56px;
+  width: 100%;
+  background-color: #282c34;
+} */
+
+/* ABOUT ME */
+
+#about-me {
+  background-color: #373c47;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+#about-me-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
