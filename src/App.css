@@ -333,6 +333,7 @@ body::-webkit-scrollbar {
   overflow: hidden;
   transition: all 0.3s ease-in-out; 
   border-radius: 7%;
+  margin-bottom: 1.5vw;
 }
 
 .project-title {
