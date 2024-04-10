@@ -8,6 +8,7 @@ import pills from "./images/pills.png";
 import search_bar from "./images/search_bar.png";
 import lungs from "./images/lungs.png";
 import brain from "./images/brain.png";
+import portfolio from "./images/portfolio.jpg"
 import ProtonAnimation from "./ProtonAnimation";
 import ProjectComponent from "./projectprops";
 
@@ -205,6 +206,14 @@ function App() {
               title="Search"
               description="Implemented a search program that utilizes the pagerank algorithm to search through XML documents and returning the top 10 most relevant pages based on relevance to the search query"
               imageUrl={search_bar}
+              githubUrl="#"
+              isClickable={false}
+            />
+
+            <ProjectComponent
+              title="This Portfolio!"
+              description="Built this portfolio from scratch using the React framework, Typescript, CSS and HTML"
+              imageUrl={portfolio}
               githubUrl="#"
               isClickable={false}
             />
