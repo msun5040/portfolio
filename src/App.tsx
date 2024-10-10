@@ -8,9 +8,11 @@ import pills from "./images/pills.png";
 import search_bar from "./images/search_bar.png";
 import lungs from "./images/lungs.png";
 import brain from "./images/brain.png";
+import brain_graph from "./images/brain_graph.png"
 import portfolio from "./images/portfolio.jpg"
 import ProtonAnimation from "./ProtonAnimation";
 import ProjectComponent from "./projectprops";
+
 
 function App() {
   const nameBoxRef = useRef<HTMLDivElement>(null);
@@ -110,7 +112,7 @@ function App() {
             <Nav.Link href="#projects">Projects</Nav.Link>
             <Nav.Link href="#research">Research</Nav.Link>
             <Nav.Link
-              href="https://drive.google.com/file/d/1Yfv3TZyXdmqPCsMx1cWL1_MMCGOkTCeq/view?usp=sharing"
+              href="https://drive.google.com/file/d/195-cqTc6us6ZfYyc1sbq4x3BfTKjAMKW/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -165,7 +167,7 @@ function App() {
             <hr className="subtitle-break" />
             <div id="about-me-body">
               <p>
-                Hello! My name is Michael Sun and I'm a junior at Brown
+                Hello! My name is Michael Sun and I'm a senior at Brown
                 University studying Computational Biology with a focus on
                 Computer Science.
               </p>
@@ -186,6 +188,13 @@ function App() {
           </div>
           <hr className="subtitle-break"></hr>
           <div className="project-display ">
+            <ProjectComponent
+              title="Honors Thesis"
+              description="Longitudinal Network Analysis Using Graph Neural Networks to Predict Glioblastoma Progression from Primary Tumors to Recurrence"
+              imageUrl={brain_graph}
+              githubUrl="https://drive.google.com/file/d/1Q7SqIGGwIX5FyF1PCIy3QPrVNTu94U0u/view?usp=sharing}{\color{blue}Link to Thesis Abstract"
+              isClickable={true}
+            />
             <ProjectComponent
               title="ClearMeds"
               description="Web app to help patients find and learn about generic name drugs based on the active ingredient(s) of a brand name, while taking into account patient allergies. Click to be redirected to Github"
