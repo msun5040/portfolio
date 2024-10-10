@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.f01b520e.css",
-    "main.js": "/portfolio/static/js/main.3a7628e9.js",
+    "main.js": "/portfolio/static/js/main.b0eda665.js",
     "static/js/787.7da95b79.chunk.js": "/portfolio/static/js/787.7da95b79.chunk.js",
     "static/media/travel_planner.png": "/portfolio/static/media/travel_planner.a33d8f862e7aff9f59bc.png",
+    "static/media/brain_graph.png": "/portfolio/static/media/brain_graph.a5b78e384fb8ea0572a2.png",
     "static/media/portrait.jpg": "/portfolio/static/media/portrait.42b96f1c58f7bad56955.jpg",
     "static/media/lungs.png": "/portfolio/static/media/lungs.5d8b220aad40759379eb.png",
     "static/media/portfolio.jpg": "/portfolio/static/media/portfolio.f1e859a3fce25c995342.jpg",
@@ -12,11 +13,11 @@
     "static/media/pills.png": "/portfolio/static/media/pills.ef4ad29211f61276a69b.png",
     "index.html": "/portfolio/index.html",
     "main.f01b520e.css.map": "/portfolio/static/css/main.f01b520e.css.map",
-    "main.3a7628e9.js.map": "/portfolio/static/js/main.3a7628e9.js.map",
+    "main.b0eda665.js.map": "/portfolio/static/js/main.b0eda665.js.map",
     "787.7da95b79.chunk.js.map": "/portfolio/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f01b520e.css",
-    "static/js/main.3a7628e9.js"
+    "static/js/main.b0eda665.js"
   ]
 }
